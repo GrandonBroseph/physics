@@ -1,0 +1,57 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:100";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+html, body, .app {
+  height: 100%; }
+
+body {
+  background: black; }
+
+h1 {
+  font-size: 2rem; }
+
+h2 {
+  font-size: 2rem; }
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden; }
+
+.playfield {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100vw;
+  margin: auto;
+  font-size: 0.15625vw;
+  overflow: hidden;
+  background: white; }
+  .playfield::after {
+    content: "";
+    display: block;
+    padding: 0 0 75% 0; }
+  .playfield .circle {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 4em 16em rgba(0, 0, 0, 0.25); }
+  .playfield span {
+    margin: auto; }
+    .playfield span::before {
+      content: "Smaller than 4:3";
+      font: 48em/1 Roboto, sans-serif;
+      color: lightgray; }
+
+@media screen and (min-aspect-ratio: 4 / 3) {
+  .playfield {
+    width: 100vh;
+    font-size: 0.15625vh;
+    -webkit-transform: scale(1.33333);
+            transform: scale(1.33333); }
+    .playfield span::before {
+      content: "Larger than 4:3"; } }

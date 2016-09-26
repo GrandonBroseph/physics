@@ -1,0 +1,25 @@
+{
+  "name": "physics",
+  "version": "1.0.0",
+  "description": "Multiplayer physics engine",
+  "main": "server.js",
+  "author": "Brandon Semilla (grandonbroseph+gh@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "pug": "^2.0.0-beta6",
+    "socket.io": "^1.4.8"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-pug": "^3.0.4",
+    "gulp-sass": "^2.3.2",
+    "ngrok": "^2.2.3",
+    "run-sequence": "^1.2.2"
+  }
+}
