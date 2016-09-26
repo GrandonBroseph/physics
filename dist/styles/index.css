@@ -20,7 +20,12 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .playfield {
   display: -webkit-box;
@@ -28,7 +33,6 @@ h2 {
   display: flex;
   position: relative;
   width: 100vw;
-  margin: auto;
   font-size: 0.15625vw;
   overflow: hidden;
   background: white; }
